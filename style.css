@@ -1,0 +1,250 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
+h3{
+    margin-left:60px;
+}
+
+.hero {
+    background: linear-gradient(to right, #0066cc, #003366), url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #004080;
+    transform: scale(1.1);
+}
+
+.updates {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.update-list{
+    width: 1000px;
+    margin-left: 100px;
+}
+
+.updates h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.updates ul {
+    list-style: none;
+    padding: 0;
+}
+
+.updates ul li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.updates ul li:hover {
+    transform: scale(1.05);
+}
+
+.updates ul li a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.updates ul li p {
+    margin: 5px 0 0;
+    color: #666;
+}
+.hidden {
+    display: none;
+}
+
+.show-more {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.show-more:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
+
+.collapsible-sections {
+    padding: 40px 0;
+}
+
+.collapsible {
+    background-color: #0056b3;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5em;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.collapsible:after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    font-size: 1em;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+.collapsible.active:after {
+    transform: rotate(-180deg); /* Rotate arrow up */
+}
+
+.collapsible:hover {
+    background-color: #004080;
+    transform: scale(1.02);
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-left: 5px solid #0056b3;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0056b3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content li a:hover {
+    background-color: #004080;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover > a {
+    background-color: #004080;
+}
+
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    height:300px ;
+    width: 800px;
+    color: #095d44;
+}

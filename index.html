@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GST Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Goods and Services Tax Portal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About GST &#9662;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="updates.html">Updates</a></li>
+                            <li><a href="legislation.html">Legislation</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services &#9662;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Registration</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Payments</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Help &#9662;</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">User Manual</a></li>
+                            <li><a href="#">Contact Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to the GST Information Portal</h2>
+                <p>Your one-stop destination for all GST-related information and services.</p>
+                <button onclick="showAlert()">Learn More</button>
+            </div>
+        </section>
+        <section class="updates">
+            <div class="container">
+                <h3>Latest Updates</h3>
+                <ul>
+                    <li>Update 1: New GST rates effective from April 2024.</li>
+                    <li>Update 2: Online filing system maintenance on 15th May 2024.</li>
+                    <li>Update 3: Introduction of e-Invoicing for businesses above ₹50 crores turnover.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="collapsible-sections">
+            <div class="container">
+                <h3>Information Sections</h3>
+                <button class="collapsible">Section 1: GST Registration</button>
+                <div class="content">
+                    <p>Details about GST registration process...</p>
+                </div>
+                <button class="collapsible">Section 2: Filing Returns</button>
+                <div class="content">
+                    <p>Information on how to file GST returns...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GST Information Portal. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
